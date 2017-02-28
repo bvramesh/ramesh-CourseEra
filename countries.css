@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+#wrapper{
+  height: 500px;
+  width: 900px;
+  margin: 0 auto;
+  background-color: tomato;
+  position: relative;
+}
+
+.circle{
+  width:200px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  border-radius: 50%;
+}
+.quadrant{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+.first{
+  top: 0;
+  left: 0;
+}
+
+.second{
+  top: 0;
+  right: 0;
+}
+
+.third{
+  left: 0%;
+  bottom: 0;
+}
+.fourth{
+  right: 0;
+  bottom: 0;
+}
+.box{
+  width:100px;
+  height:100px;
+  position: absolute;
+  background-color: seagreen;
+   transition: all 1000ms ease;
+  /*bottom: 0px;*/
+}
+
+.first .box{
+  /*top: 40px;*/
+  left: 154.29px;
+  bottom: 20px;
+  transform: rotate(45deg);
+}
+
+.first:hover .box{
+  transform: rotate(360deg);
+  position: absolute;
+  top:200px;
+  left:400px;
+}
+
+.second .box{
+  right: 154.29px;
+  bottom: 20px;
+  transform: rotate(45deg);
+  }
+
+  .second:hover .box{
+    transform: rotate(360deg);
+    position: absolute;
+    top:200px;
+    right:400px;
+  }
+
+.third .box{
+  top: 20px;
+  left: 154.29px;
+
+  transform: rotate(45deg);
+}
+.third:hover .box{
+  transform: rotate(360deg);
+  position: absolute;
+  bottom:200px;
+  left:400px;
+}
+
+
+.fourth .box{
+  right: 154.29px;
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+.fourth:hover .box{
+  transform: rotate(360deg);
+  position: absolute;
+  /*bottom:500px;*/
+  right:400px;
+}
